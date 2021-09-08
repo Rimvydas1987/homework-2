@@ -7,7 +7,8 @@
 function TrainImage(props) {
     return (
         <div>
-            <img src={ require(`../Images/${imgNr[i]}`).default } alt = "pic"/>
+            {/* <img src={ require(`../Images/${imgNr[i]}`).default } alt = "pic"/> */}
+            <img src={ require(`../Images/01.jpg`).default } alt = "pic"/>
         </div>
     )
 
