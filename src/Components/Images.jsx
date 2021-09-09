@@ -1,40 +1,48 @@
-/* import trains from '../Data/Trains'; */
+import trains from '../Data/Trains';
 
 
+const imgName = trains.map(train => train.desc);
 
-/* const imgNr = trains.map(train => train.img); */
 
 function TrainImage(props) {
+    const imgNr = trains.map(train => train.img);
     return (
         <div>
-            {/* <img src={ require(`../Images/${imgNr[i]}`).default } alt = "pic"/> */}
-            <img src={ require(`../Images/01.jpg`).default } alt = "pic"/>
+            {imgNr.map((value) => {
+              return <img src={ require(`../${value}`).default} alt= "pic"/>})}
+            <div></div>
         </div>
     )
 
 
-    
-    /* for(let i=0; i<imgNr.length; i++){
-        console.log(imgNr[i]);
-        <img src="./ "
-        
+   /*  for(let i=0; i<imgNr.length; i++){
+        console.log(imgNr[i])
+    }
+    return (
+        <div>
+            <img src={ require(`../${imgNr[i]}`).default } alt = "pic"/>
+            <div>{imgName[i]}</div>
+        </div>
+    ) */
     }
 
 
 
 
-        if('Brigadininkas' === props.bebras){            
-            return (
-                <div className = "">            
-                    <b><Bebras bebras={props.bebras}/></b>
-                </div>
-        );
-        }
-    return (
-        <div className = "kvadratas">        
-        <Bebras bebras={props.bebras}/>
-        </div>
-    ); */
-}
-    
+    /* render: function() {
+        const elements = ['one', 'two', 'three'];
+        return (
+          <ul>
+            {elements.map((value, index) => {
+              return <li key={index}>{value}</li>
+            })}
+          </ul>
+        )
+      } */
+
+
+
+
+
+
 export default TrainImage;
