@@ -8,8 +8,6 @@ import TrainImage from "./Images"
 function App(props) {
     return (
         <TrainImage/>
-
-      /*   {imgName.map((b, i) => <Kvadratas key={i} bebras={b}/>)}   */
     );
     }
     
