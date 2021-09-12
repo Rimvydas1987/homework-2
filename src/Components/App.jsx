@@ -2,8 +2,6 @@ import React from 'react';
 import trains from "../Data/Trains";
 import TrainImage from "./Images"
 
-/* const imgName = trains.map(train => train.desc); */
-
 
 function App(props) {
     return (<>
