@@ -1,21 +1,11 @@
-import trains from '../Data/Trains';
 
-
-
-
-function TrainImage(props) {
- /*  const imgName = trains.map(train => train.desc); */
-  const imgNr = trains.map(train => train.img);
-    return (<>
-    <div>
-      <div>
-        {imgNr.map((value) => {return <img src={ require(`../${value}`).default} alt= "pic"/>})};
-      </div>
-      <div>
-        
-      </div>
-    </div>
-    </>
+function TrainImage(promp) {
+ 
+    return (
+        <div className="col-12 col-xl-3 col-md-4 col-sm-6">
+            <img className="img " src={promp.img} alt={promp.sesc}/>
+            <span>{promp.desc}</span>
+        </div>
     )
 };
 
