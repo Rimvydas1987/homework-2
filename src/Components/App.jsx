@@ -43,7 +43,7 @@ class App extends React.Component {
             <Zalias clickToChangeColor={this.changeColorGreen}></Zalias>
             <Raudonas clickToChangeColor={this.changeColorRed}></Raudonas> 
         </div>
-    )
-}
+        )
+    }
 }   
 export default App;
